@@ -1,0 +1,18 @@
+<phpunit bootstrap="../vendor/autoload.php"
+  colors="always"
+  verbose="true"
+  >
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">../src</directory>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="coverage-html" target="html"/>
+  </logging>
+  <testsuites>
+    <testsuite name="The Sweet Suite">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

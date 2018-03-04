@@ -1,0 +1,31 @@
+{
+    "name": "mzd/dbunit",
+    "description": "learning db unit testing",
+    "type": "project",
+    "authors": [
+        {
+            "name": "ginkgoMZD",
+            "email": "mzd@ginkgostreet.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "DbUnit\\": "src/",
+        "DbUnitTests\\": "phpunit/tests/"
+      }
+    },
+    "repositories": [
+      { "type": "path", "url": "~/work/msa-dev/repos/dao" },
+      { "type": "vcs", "url": "git@bitbucket.org:mainstreetadvocates/dao.git" }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "intelogie/sql-formatter": "^1.2",
+        "phpunit/phpunit": "^7.0",
+        "phpunit/dbunit": "4.0.0",
+        "GinkgoStreetLabs/dao": "dev-master"
+    },
+    "scripts": {
+      "phpunit": "vendor/phpunit/phpunit/phpunit -c phpunit/phpunit.xml --testsuite 'The Sweet Suite'"
+    }
+}
