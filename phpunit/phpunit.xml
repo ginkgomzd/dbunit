@@ -15,6 +15,7 @@
   </filter>
   <logging>
     <log type="coverage-html" target="html"/>
+    <log type="testdox-text" target="php://stdout"/>
   </logging>
   <testsuites>
     <testsuite name="The Sweet Suite">
