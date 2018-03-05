@@ -2,6 +2,12 @@
   colors="always"
   verbose="true"
   >
+  <php>
+    <var name="DB_DSN" value="mysql:dbname=dbunit_hellow_tests;host=localhost" />
+    <var name="DB_USER" value="dbunit_hellow" />
+    <var name="DB_PASSWD" value="0[ebg(@VY@E,.O:F" />
+    <var name="DB_DBNAME" value="dbunit_hellow_tests" />
+  </php>
   <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
       <directory suffix=".php">../src</directory>
