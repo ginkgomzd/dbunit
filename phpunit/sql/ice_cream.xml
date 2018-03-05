@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="dbunit_hellow_tests">
+	<table_structure name="ice_cream">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="flavour" Type="varchar(250)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="has_nuts" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="has_chocolate" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="dairy_free" Type="tinyint(1)" Null="NO" Key="" Default="1" Extra="" Comment="" />
+		<key Table="ice_cream" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="6" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="ice_cream" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="6" Avg_row_length="2730" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="7" Create_time="2018-03-04 04:08:12" Update_time="2018-03-04 04:08:34" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="ice_cream">
+	<row>
+		<field name="id">1</field>
+		<field name="flavour">Rubber Duckey</field>
+		<field name="has_nuts">1</field>
+		<field name="has_chocolate">0</field>
+		<field name="dairy_free">1</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="flavour">Christmas Tree</field>
+		<field name="has_nuts">1</field>
+		<field name="has_chocolate">1</field>
+		<field name="dairy_free">0</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="flavour">Aloe Vera</field>
+		<field name="has_nuts">0</field>
+		<field name="has_chocolate">0</field>
+		<field name="dairy_free">1</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="flavour">Fuzzy Sweater</field>
+		<field name="has_nuts">0</field>
+		<field name="has_chocolate">1</field>
+		<field name="dairy_free">1</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="flavour">Ripped Pants</field>
+		<field name="has_nuts">1</field>
+		<field name="has_chocolate">1</field>
+		<field name="dairy_free">0</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="flavour">Reading Glasses</field>
+		<field name="has_nuts">1</field>
+		<field name="has_chocolate">0</field>
+		<field name="dairy_free">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
