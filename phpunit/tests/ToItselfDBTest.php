@@ -3,6 +3,8 @@
 namespace DbUnitTests;
 
 use \PHPUnit\DbUnit\TestCaseTrait;
+use \DbUnit\ToItself;
+use \DbUnit\IceCream;
 
 class ToItselfDBTest extends TestCase {
 
@@ -28,7 +30,23 @@ class ToItselfDBTest extends TestCase {
     $expect = $actual->getTable('ice_cream');
 
     self::assertTablesEqual($expect, $testTable);
+  }
 
+  public function testMakeIceCream() {
+    $before = self::getConnection()->getRowCount('ice_cream');
+
+    $icecream = array(
+      'flavour' => 'Jack Rabbit',
+      'has_nuts' => 1,
+      'has_chocolate' => 1,
+      'dairy_free' => 0
+    );
+
+    ToItself::makeIceCream($icecream);
+
+    $after = self::getConnection()->getRowCount('ice_cream');
+
+    self::assertSame(++$before, $after);
   }
 
 }
